@@ -10,5 +10,13 @@ How to install :
 
 `vi ~/.gitconfig`<br>
 
-then copy contens from file .gitconfig or simply download this file and put in your home directory
+then copy contents from file .gitconfig or simply download .gitconfig file from this repo and put in your home directory
+
+## .gitignore
+This file will specifies intentionally untracked files to ignore.
+How to install :
+
+`vi ~/.gitignore` <br>
+
+then copy contents from file .gitignore or simply download .gitignore file from this repo and put it to your git repository.
 
