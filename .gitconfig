@@ -1,0 +1,23 @@
+[alias]
+    bl = branch -l
+    co = checkout
+    pushm = push origin master
+    pullm = pull origin master
+    pusho = !git push origin "$(git rev-parse --abbrev-ref HEAD)"
+    pullo = !git pull origin "$(git rev-parse --abbrev-ref HEAD)"
+    cob = checkout -b
+    cm = !git add -A && git commit
+    com = !git add -A && git commit -m
+    st = status
+    stsl = stash list
+    stspop = stash pop
+    stsave = stash save
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ll  = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    lg = log --all --decorate --graph --oneline
+    last = !git for-each-ref --sort=-committerdate --count=10 refs/heads/  | cut -d"/" -f 3
+[user]
+	email = your.name@example.com
+	name = Your Name
+[core]
+	editor = vim
